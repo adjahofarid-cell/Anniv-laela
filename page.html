@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday Laëla</title>
+    <link rel="stylesheet" href="page.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="button-container">
+<!--        <button class="click-button"></button>-->
+        <button class="button-85" role="button">Click me !</button>
+    </div>
+    
+    <script>
+        const btn = document.querySelector('.button-85');
+        btn.addEventListener('click', () => {
+            document.body.innerHTML = `
+                <div class="gif-container">
+                        <img src="gifs/birthday-1.gif" alt="">
+                    <div class="first-line-container">
+                        <img src="gifs/birthday-1.webp" alt="">
+                        <img src="gifs/birthday-3.gif" alt="">
+                        <img src="gifs/birthday-4.gif" alt="">
+                        <img src="gifs/birthday-5.gif" alt="">
+                        <img src="gifs/birthday-8.webp" alt="">
+
+                    </div>
+                    <div class="second-line-container">
+                        <img src="gifs/birthday-6.gif" alt="">
+                        <div class="birthday-message-container">
+                            <p class="birthday-message">Joyeux anniversaire Laëla !!!</p>
+                        </div>
+                        <img src="gifs/birthday-7.gif" alt="">
+                    </div>
+                    <div class="third-line-container">
+                        <img src="gifs/birthday-9.gif" alt="">
+                        <img src="gifs/birthday-10.gif" alt="">
+                        <img src="gifs/birthday-11.gif" alt="">
+                        <img src="gifs/birthday-12.webp" alt="">
+                        <img src="gifs/birthday-13.gif" alt="">
+                    </div>
+
+                </div>
+
+            `
+        } )
+    </script>
+</body>
+</html>
